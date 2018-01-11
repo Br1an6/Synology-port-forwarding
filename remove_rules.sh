@@ -27,7 +27,7 @@ fi
 # myip=$(ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p')
 echo "[*] Start removing rules with IP: $synip"
 # edit this part if needed
-# upnpc -a IP port external-port protocal
+# upnpc -d IP port protocal
 echo "[*] DSM 5000 5001"
 upnpc -d 5000 TCP
 upnpc -d 5001 TCP
