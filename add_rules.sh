@@ -14,7 +14,7 @@ else
 	echo "[*] Found Homebrew and Updating"
     brew update
     brew upgrade
-    brew clean
+    brew cleanup
 fi
 
 echo "[*] Check for upnpc"
