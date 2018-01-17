@@ -10,6 +10,7 @@ if [[ $? != 0 ]] ; then
     # Install Homebrew
     echo "[*] Not found_Installing homebrew"
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    export PATH=/usr/local/bin:$PATH # Please put this line to your .bash_profile or .bashrc or .zshrc
 else    
 	echo "[*] Found Homebrew and Updating"
     brew update
